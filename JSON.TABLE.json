@@ -1,0 +1,22 @@
+{
+    "student_details": [
+        {
+            "Name": "Anchal",
+            "age": 20,
+            "cource": "B-Tech",
+            "contact_no": "8081897159"
+        },
+        {
+            "name": "Mahi",
+            "age": 20,
+            "course": "BBA",
+            "contact_no": "9001234567"
+        },
+        {
+            "name": "Gungun",
+            "age": 19,
+            "course": "B-Tech",
+            "contact_no": "7894561230"
+        }
+    ]
+}
