@@ -1,0 +1,10 @@
+import json
+
+data ='{"company":{"name":"Tech Innovations","address":{"street":"123 Tech Lane","city":"Silicon Valley","state":"CA","postal_code":"94043"},"employees":[{"id":1,"name":"Alice","position":"Software Engineer","contact":{"email":"alice@techinnovations.com","phone":"555-1234"}},{"id":2,"name":"Bob","position":"Data Scientist","contact":{"email":"bob@techinnovations.com","phone":"555-5678"}}]}}'
+
+jsondata = json.loads(data)
+#print(jsondata["company"])
+#print(jsondata["company"]["address"]["street"])
+#print(jsondata["company"]["employees"])
+#print(jsondata["company"]["employees"][0])
+print(jsondata["company"]["employees"][1]["contact"]["phone"])
