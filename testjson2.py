@@ -14,6 +14,6 @@ finally :
 
 
 
-## welll the this giving the output 3 times 
+## well, this giving the output 3 times 
 #for data in jsondata["company"]:
 #        print(jsondata["company"]["employees"][1]["name"], end="\n")
