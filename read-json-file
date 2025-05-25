@@ -1,0 +1,22 @@
+import json
+def read_file(file_name):
+    try:
+        #read file
+        with open (file_name+".json","r") as f :
+            file_name = json.load(f)
+             
+        #print the object needed
+        print(file_name["company"])
+        print(file_name["company"]["employees"])
+
+
+    except Exception as e:
+        print("An exception occured", e)
+
+
+if __name__ == '__main__':
+    try:
+        file_name = input (" Enter the file name(without .json) :")
+        read_file(file_name)
+    except Exception as e :
+        print("An exception  has occured")
