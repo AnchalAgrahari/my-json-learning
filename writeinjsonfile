@@ -1,0 +1,33 @@
+import json
+def write_file(from_1stfile, from_2ndfile, to_file):
+    try:
+        with open (from_1stfile ) as f :
+            data1 = json.load(f)
+            print("The data that copied ")
+            print(data1)
+
+        with open (from_2ndfile ) as f :
+            data2 = json.load(f)
+            print("The data that copied ")
+            print(data2)
+        
+        with open (to_file+".json", "w") as f:
+           data = json.dump({**data1,**data2}, f, indent=4)
+
+    except FileNotFoundError :
+        print("File in not in the system")
+            
+    except Exception as e:
+        print("An error has occured",e) 
+
+
+
+
+if __name__=='__main__':
+    try:
+        from_1stfile = input("Enter the 1st file name you want to copy data (with .json):")
+        from_2ndfile = input("Enter the 2nd file name you want to copy data (with .json):")
+        to_file = input("Enter the file name you want to write the data (with .json): ")
+        write_file(from_1stfile, from_2ndfile, to_file)
+    except Exception as e:
+        print("An error is occured",e)
