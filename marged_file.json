@@ -1,0 +1,51 @@
+{
+    "employee_details": [
+        {
+            "id_no": 1,
+            "name": "Abhilash",
+            "age": 23,
+            "department": "management"
+        },
+        {
+            "id.no": 2,
+            "name": "ira",
+            "age": 20,
+            "department": "marketing"
+        },
+        {
+            "id_no": 3,
+            "name": "inaaya",
+            "age": 22,
+            "department": "technical"
+        }
+    ],
+    "company": {
+        "name": "Tech Innovations",
+        "address": {
+            "street": "123 Tech Lane",
+            "city": "Silicon Valley",
+            "state": "CA",
+            "postal_code": "94043"
+        },
+        "employees": [
+            {
+                "id": 1,
+                "name": "Alice",
+                "position": "Software Engineer",
+                "contact": {
+                    "email": "alice@techinnovations.com",
+                    "phone": "555-1234"
+                }
+            },
+            {
+                "id": 2,
+                "name": "Bob",
+                "position": "Data Scientist",
+                "contact": {
+                    "email": "bob@techinnovations.com",
+                    "phone": "555-5678"
+                }
+            }
+        ]
+    }
+}
